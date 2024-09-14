@@ -1,25 +1,35 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0px;
 }
 #logo {
     margin: 8px;
     padding: 8px;
-    font-family: "Fredoka One", sans-serif;
-    text-shadow: 
-    1px 1px 0px black,
-    -1px 1px 0px black,
-    1px -1px 0px black,
-    -1px -1px 0px black;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+}
+img {
+    width: 75px;
+    height: 75px;
 }
 body > header {
-    background-color: orange;
-    color: white;
+    background-color: #5683ae16;
+    color: #5683ae;
+    padding: 8px;
+}
+body > header > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-body > header > nav > ul {
+#combined_logo {
+    display: flex;
+}
+body > header div> nav > ul {
     list-style: none;
     text-decoration: none;
 }
@@ -27,15 +37,20 @@ body > header > nav > ul {
     display: flex;
 }
 .navbutton {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 8px;
     margin: 16px;
-    border: 1px solid white;
-    border-radius: 10%;
+    background-color: #5683ae90;
+    border: 1px solid #5684AE;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.navbutton:hover {
+    background-color: #5683ae5b;
 }
 body > main article {
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
 #main-content {
@@ -43,33 +58,85 @@ body > main article {
     justify-content: space-around;
 }
 #main-content > div {
-    width: 80%;
+    width: 70%;
+}
+aside > div {
+    border: solid #5684AE;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 16px;
+}
+aside h3 {
+    margin: 0px;
+    color: #5684AE;
 }
 #main-content > aside li {
     list-style: none;
     text-decoration: none;
 }
 #main-content > aside a {
+    text-decoration: none;
+    color: #5683aec8;
+    cursor: pointer;
+    padding: 8px;
+}
+#main-content > aside a:hover {
     text-decoration: underline;
-    color: rgba(255, 123, 41, 0.833);
 }
 h4 {
-    color: rgb(255, 123, 41);
+    color: #5683aedb;
+}
+.intro h2 {
+    color: #5683aedc;
+}
+.intro > h3{
+    font-weight: 400;
+    font-size: 18px;
+}
+.info {
+    background-color: #5683ae2f;
+    padding: 8px;
+    margin: 16px;
+}
+.info:hover {
+    background-color: #5683ae1b;
+}
+.info a{
+    text-decoration: none;
+    color: #5683ae;
+}
+.info h3{
+    margin: 0px;
+}
+.info h4 {
+    color: #5683aee2;
+}
+.line{
+    margin-bottom: 0px;
+}
+#author{
+    font-size: 18px;
+}
+#date{
+    font-size: 16px;
 }
 form {
     text-align: center;
+    padding: 8px;
 }
 h2 {
     text-align: center;
 }
 body > footer {
-    background-color: orange;
+    background-color: #5683ae16;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin: 0px;
+    padding: 8px;
 }
 body > footer > h2 {
-    color: white;
+    color: #5683ae;
     padding: 8px;
 }
 body > footer section > nav > ul {
@@ -80,10 +147,79 @@ body > footer section > nav > ul {
 }
 .footer-nav {
     text-decoration: none;
-    color: white;
+    color: #5683ae;
     padding: 8px;
     margin: 16px;
 }
-img {
-    border-radius: 50%;;
+.footer-nav:hover{
+    text-decoration: underline;
+}
+.popup_modal {
+    border: 3px solid #5683ae;
+    background-color: white;
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    z-index: 2;
+}
+.display-none {
+    display: none;
+}
+.popup_modal h2 {
+    color: #5683ae;
+    margin: 0px;
+    padding: 8px;
+}
+.close {
+    color: #5683ae;
+    padding: 8px;
+    padding-top: 0px;
+    float:right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: #5683aea9;
+    text-decoration: none;
+    cursor: pointer;
+}
+.form_container label {
+    margin: 4px;
+}
+.form_container input {
+    margin: 4px;
+    padding: 8px;
+    border: none;
+    background-color: #5683ae11;
+}
+.form_container select{
+    padding: 8px;
+    border: none;
+    background-color: #5683ae11;
+}
+#button{
+    background-color: #5683ae63;
+    border: solid #5683ae7d;
+    margin-top: 8px;
+    font-size: 22px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+#button:hover, #button:focus{
+    background-color: #5683ae31;
+    cursor: pointer;
+}
+.dark-bg {
+    /* background: linear-gradient(rgba(20,20,20,0.9), rgba(20,20,20,0.9)); */
+    background-color: #5683ae76;
+}
+#thanks {
+    display: none;
+    color: #5683ae;
+    font-size: 22px;
+    margin: 0px;
+    margin-top: 4px;
 }
